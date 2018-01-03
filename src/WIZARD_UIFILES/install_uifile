@@ -2,27 +2,27 @@
 	"step_title": "Logstash Configuration",
 	"items": [{
 		"type": "textfield",
-		"desc": "Configuration File. Defaults to /volume1/active_system/logstash/logstash.conf",
+		"desc": "Configuration File. Defaults to /volume1/@appstore/logstash/logstash.conf",
 		"subitems": [{
 			"key": "wizard_config_path",
 			"desc": "Configuration File Location",
-			"emptyText": "/volume1/active_system/logstash/logstash.conf"
+			"emptyText": "/volume1/@appstore/logstash/logstash.conf"
 		}]
 	}, {
 		"type": "textfield",
-		"desc": "Database Directory. Defaults to /volume1/active_system/logstash/database",
+		"desc": "Database Directory. Defaults to /volume1/@appstore/logstash/database",
 		"subitems": [{
 			"key": "wizard_database_dir",
 			"desc": "Database Directory",
-			"emptyText": "/volume1/active_system/logstash/database"
+			"emptyText": "/volume1/@appstore/logstash/database"
 		}]
 	}, {
 		"type": "textfield",
-		"desc": "Log File. Defaults to /volume1/active_system/logstash/logstash.log",
+		"desc": "Log File. Defaults to /volume1/@appstore/logstash/logstash.log",
 		"subitems": [{
 			"key": "wizard_log_path",
 			"desc": "Log File Location",
-			"emptyText": "/volume1/active_system/logstash/logstash.log"
+			"emptyText": "/volume1/@appstore/logstash/logstash.log"
 		}]
 	}]
 }, {
@@ -56,8 +56,8 @@
 		"desc": "Additional Logstash Parameters. Leave blank for none.",
 		"subitems": [{
 			"key": "wizard_logstash_parameters_tuning",
-			"desc": "Java Tuning Parameters",
-			"emptyText": "--verbose"
+			"desc": "Startup Parameters. https://www.elastic.co/guide/en/logstash/6.1/running-logstash-command-line.html for more options",
+			"emptyText": "-f $LOGSTASH_CONFIG_PATH -l $LOGSTASH_LOG_PATH -r"
 		}]
 	}]
 }]
