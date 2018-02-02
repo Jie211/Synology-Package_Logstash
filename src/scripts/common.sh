@@ -36,7 +36,7 @@ LOGSTASH_LOG_PATH="${SYNOPKG_PKGDEST}/${PACKAGE_NAME_SIMPLE}.log"
 
 # Download Varables
 SYNOPKG_PKGDEST="/var/packages/logstash/target"
-SYNOPKG_PKGVER="6.1.1"
+SYNOPKG_PKGVER="6.1.3"
 LOGSTASH_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/logstash/logstash-${SYNOPKG_PKGVER}.tar.gz"
 LOGSTASH_DOWNLOAD_FILE="$(basename ${LOGSTASH_DOWNLOAD_URL})"
 # KIBANA_DOWNLOAD_URL="http://download.elasticsearch.org/kibana/kibana/kibana-latest.tar.gz"
